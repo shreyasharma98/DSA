@@ -13,22 +13,25 @@ Given a number N, print sum of all even numbers from 1 to N.
 # 3.Fahrenheit to Celsius Table
 Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and Step Size (W), you need to convert all Fahrenheit values from Start to End at the gap of W, into their corresponding Celsius values and print the table.
 <br>
-Sample Input :
-0 
-100 
-20
-Sample Output :
-0   -17
-20  -6
-40  4
-60  15
-80  26
-100 37
+Sample Input :<br>
+```0 <br>
+100 <br>
+20 <br>```
+Sample Output :<br>
+``` 0   -17 <br>
+20  -6 <br>
+40  4 <br>
+60  15 <br>
+80  26 <br>
+100 37 <br>```
 
 # 4. Number Pattern 1
 Print the following pattern
 Pattern for N = 4
+<br>
+```
 1
 23
 345
 4567
+```
