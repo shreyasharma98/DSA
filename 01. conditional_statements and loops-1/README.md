@@ -16,7 +16,8 @@ Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and St
 Sample Input :<br>
 ```0 <br>
 100 <br>
-20 <br>```
+20 <br>```<br>
+
 Sample Output :<br>
 ``` 0   -17 <br>
 20  -6 <br>
