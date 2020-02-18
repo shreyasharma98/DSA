@@ -143,7 +143,7 @@ CDE
 BCDE
 ABCDE
 ```
-17.Code : Mirror Number Pattern
+# 17.Code : Mirror Number Pattern
 Print the following pattern for the given N number of rows.
 Pattern for N = 4
 ```
