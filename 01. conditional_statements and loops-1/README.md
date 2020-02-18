@@ -24,12 +24,12 @@ Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and St
 
 ### Sample Output :<br>
 ``` 
-0   -17 <br>
-20  -6 <br>
-40  4 <br>
-60  15 <br>
-80  26 <br>
-100 37 <br>
+0   -17 
+20  -6 
+40  4 
+60  15
+80  26
+100 37
 ```
 
 # 4. Number Pattern 1
