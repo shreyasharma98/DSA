@@ -77,3 +77,69 @@ Sample Output 1 :
 ```
 12
 ```
+
+# 10.Decimal to Binary
+
+Given a decimal number (integer N), convert it into binary and print.
+The binary number should be in the form of an integer.
+Note : The given input number could be large, so the corresponding binary number can exceed the integer range. So take the answer as long.
+
+Sample Input 1 :
+```
+111
+```
+Sample Output 1 :
+```
+7
+```
+# 11.Square Root (Integral)
+
+Given a number N, find its square root. You need to find and print only the integral part of square root of N.
+For eg. if number given is 18, answer is 4.
+
+# 12.Check Number sequence
+
+You are given S a sequence of n integers i.e. S = s1, s2, ..., sn. Compute if it is possible to split S into two parts : s1, s2, ..., si and si+1, si+2, ….., sn (0 <= i <= n) in such a way that the first part is strictly decreasing while the second is strictly increasing one.
+That is, in the sequence if numbers are decreasing, they can start increase at one point. And once number starts increasing, they cannot decrease at any point further.
+Sequence made up of only increasing numbers or only decreasing numbers is a valid sequence. So in both the cases, print true.
+You just need to print true/false. No need to split the sequence.
+
+# 13.Pyramid Number Pattern
+
+Print the following pattern for the given number of rows.
+Pattern for N = 4
+```
+   1
+  212
+ 32123
+4321234
+```
+
+# 14.Number Star Pattern
+
+Print the following pattern for given number of rows.
+```
+Sample Input :
+   5
+Sample Output :
+1234554321
+1234**4321
+123****321
+12******21
+1********1
+```
+
+# 15.Second Largest
+
+Take input a stream of n integer elements, find the second largest element present.
+The given elements can contain duplicate elements as well. If only 0 or 1 element is given, the second largest should be INT_MIN ( - 2^31 ).
+
+Sample Input 1 :
+```
+6
+22 31 67 1 12 90
+```
+Sample Output 1 :
+```
+67
+```
