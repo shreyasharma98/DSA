@@ -23,7 +23,7 @@ Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and St
 ```
 
 # 2.Fibonacci Number
-Send Feedback
+
 Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
  ### Sample Input :<br>
 
