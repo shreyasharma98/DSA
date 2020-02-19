@@ -63,7 +63,7 @@ Write a program to generate the reverse of a given number N. Print the correspon
 ```
 Sample Output 1 :
 ```
-890
+891
 ```
 
 # 9.Binary to decimal
