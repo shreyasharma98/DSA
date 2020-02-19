@@ -53,3 +53,27 @@ Print count of characters, count of digits and count of white spaces respectivel
 # 7.Terms of AP
 
 Write a program to print first x terms of the series 3N + 2 which are not multiples of 4.
+
+# 8.Reverse of a number
+
+Write a program to generate the reverse of a given number N. Print the corresponding reverse number.
+
+```
+1980
+```
+Sample Output 1 :
+```
+890
+```
+
+# 9.Binary to decimal
+
+Given a binary number as an integer N, convert it into decimal and print.
+Sample Input 1 :
+```
+1100
+```
+Sample Output 1 :
+```
+12
+```
