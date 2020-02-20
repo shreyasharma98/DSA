@@ -49,7 +49,7 @@ Sample Output 1 :
 ```
 3 9 12 6 32 4
 ```
-# 3.Arrange Numbers in Array
+# 4.Arrange Numbers in Array
 
 Given a number n, put all elements from 1 to n in an array in order - 1,3,.......4,2.
 
