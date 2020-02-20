@@ -30,8 +30,6 @@ Given a number N, figure out if it is a member of fibonacci series or not. Retur
 ```
 5
 ```
-
-
 ### Sample Output :<br>
 ``` 
 true

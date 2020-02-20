@@ -35,3 +35,29 @@ Given an array of length N, you need to find and print the sum of all elements o
 ``` 
 26
 ```
+
+# 3.Swap Alternate
+
+Given an array of length N, swap every pair of alternate elements in the array.
+
+Sample Input 1:
+```
+6
+9 3 6 12 4 32
+```
+Sample Output 1 :
+```
+3 9 12 6 32 4
+```
+# 3.Arrange Numbers in Array
+
+Given a number n, put all elements from 1 to n in an array in order - 1,3,.......4,2.
+
+Sample Input 1 :
+```
+6
+```
+Sample Output 1 :
+```
+ 1 3 5 6 4 2
+```
