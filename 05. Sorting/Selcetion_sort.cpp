@@ -2,10 +2,10 @@
 #include <iostream>
 using namespace std;
 void Selection_sort(int *arr, int n){
-    for(int i = 0;i<n;i++)
+    for(int i = 0;i<n-1;i++)
     {
-        int min = INT_MAX,min_idx = -1;
-        for(int j =i;j<n;j++)
+        int min = arr[i],min_idx = i;
+        for(int j =i+1;j<n;j++)
         {
             if(arr[j]<min)
             {
@@ -17,7 +17,6 @@ void Selection_sort(int *arr, int n){
         arr[i] = min;
         arr[min_idx] = temp;
     }
-
 
 }
 
