@@ -95,9 +95,20 @@ Sample Input 1 :
 ```
 7
 1 2 3 4 5 6 7
-9
+4
 ```
 Sample Output 1 :
+```
+3
+```
+
+Sample Input 2 :
+```
+7
+1 2 3 4 5 6 7
+9
+```
+Sample Output 2 :
 ```
 -1
 ```
