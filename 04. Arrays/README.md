@@ -112,3 +112,21 @@ Sample Output 2 :
 ```
 -1
 ```
+
+# 8. Array intersection
+
+Given two random integer arrays of size m and n, print their intersection. That is, print all the elements that are present in both the given arrays.
+
+Sample Input 1 :
+```
+6
+2 6 8 5 4 3
+4
+2 3 4 7 
+```
+Sample Output 1 :
+```
+2 
+4 
+3
+```
