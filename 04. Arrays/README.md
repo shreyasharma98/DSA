@@ -61,3 +61,29 @@ Sample Output 1 :
 ```
  1 3 5 6 4 2
 ```
+
+
+# 5.Find Uniques
+
+Given an integer array of size 2N + 1. In this given array, N numbers are present twice and one number is present only once in the array.
+Sample Input 1 :
+```
+7
+2 3 1 6 3 6 2
+```
+Sample Output 1 :
+```
+1
+```
+
+# 6.Find Duplicates
+Given an array of integers of size n which contains numbers from 0 to n - 2. Each number is present at least once. That is, if n = 5, numbers from 0 to 3 is present in the given array at least once and one number is present twice. You need to find and return that duplicate number present in the array.
+Sample Input 1 :
+```
+9
+0 7 2 5 4 7 1 3 6
+```
+Sample Output 1 :
+```
+7
+```
