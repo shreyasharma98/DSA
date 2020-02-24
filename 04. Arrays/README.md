@@ -87,3 +87,17 @@ Sample Output 1 :
 ```
 7
 ```
+# 7. Binary Search
+
+Given a sorted integer array (in ascending order) and an element x. You need to search this element x in the given input array using binary search. Return the index of element in the input.
+
+Sample Input 1 :
+```
+7
+1 2 3 4 5 6 7
+9
+```
+Sample Output 1 :
+```
+-1
+```
