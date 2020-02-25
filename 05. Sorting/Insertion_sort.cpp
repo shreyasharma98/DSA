@@ -2,19 +2,17 @@
 #include<iostream>
 using namespace std;
 
-
-void BubbleSort(int arr[], int n){
-	// Write your code here
-
-    for(int i=0;i<n-1;i++)
+void insertion_sort(int arr[], int n)
+{
+    for(int i =1;i<n;i++)
     {
-        for(int j =0;j<n-1-i;j++)
+        int val = arr[i];
+        for(int k = i-1;k>=0;k--)
         {
-            if(arr[j]>arr[j+1])
+            if(val <arr[k])
             {
-            int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
+                arr[k+1] = arr[k];
+                arr[k] = val;
             }
         }
     }
@@ -32,7 +30,7 @@ int main(){
 	for(int i=0;i<size;i++)
 		cin>>input[i];
 
-	BubbleSort(input,size);
+	insertion_sort(input,size);
 
 	for(int i=0;i<size;i++)
 		cout<<input[i]<<" ";
