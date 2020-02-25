@@ -33,7 +33,7 @@ The selection sort algorithm sorts an array by repeatedly finding the minimum el
 0 2 3 6 9
 ```
 
-#3. Insertion Sort
+# 3. Insertion Sort
 Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
 
  ### Sample Input :<br>
