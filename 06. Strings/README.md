@@ -30,34 +30,32 @@ a x
 xbxcd
 ```
 
-# 3. Insertion Sort
-Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
+# 3. Trim Spaces
+
+Given an input string S that contains multiple words, you need to remove all the spaces present in the input string.
+There can be multiple spaces present after any word.
 
  ### Sample Input :<br>
 
 ```
-5
-9 3 6 2 0
+abc def g hi
 ```
 
 ### Sample Output :<br>
 ``` 
-0 2 3 6 9
+abcdefghi
 ```
-# 4.Code Merge Two Sorted Arrays
+# 4.Reverse Word Wise
 
-Given two sorted arrays of Size M and N respectively, merge them into a third array such that the third array is also sorted.
+Reverse the given string word wise. That is, the last word in given string should come at 1st place, last second word at 2nd place and so on. Individual words should remain as it is.
 
  ### Sample Input :<br>
 ```
-5
-1 3 4 7 11
-4
-2 4 6 13
+shreya sharma is a good girl
 ```
  ### Sample Output :
 ```
-1 2 3 4 4 6 7 11 13 
+girl good a is sharma shreya
 ```
 
 # 5. Push Zeros to end
