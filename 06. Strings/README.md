@@ -1,20 +1,19 @@
-## Arrays
+## Strings
+# 1.Check Palindrome
 
-# 1.Bubble Sort
-
-Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+Given a String s, check it its palindrome. Return true if string is palindrome, else return false.
+Palindrome strings are those, where string s and its reverse is exactly same.
 
  ### Sample Input :<br>
 
 ```
-5
-9 3 6 2 0
+abcdcba
 ```
 
 
 ### Sample Output :<br>
 ``` 
-0 2 3 6 9
+true 
 ```
 
 # 2.Selection Sort
