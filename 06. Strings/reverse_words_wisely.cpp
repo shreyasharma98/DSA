@@ -1,35 +1,49 @@
-// input - given string
-// You need to update in the given string itself. No need to print or return anything
+#include<iostream>
 #include<cstring>
-void reverseStringWordWise(char input[]) {
-   int start=0,end=strlen(input)-1;
-    while(start<=end)
+using namespace std;
+void reverse_word(char str[])
+{
+    int start = 0 , end = strlen(str) -1;
+    while(start <= end)
     {
-        char temp;
-        temp = input[start];
-        input[start] = input[end];
-        input[end] = temp;
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
         start++;
         end--;
     }
-    start = 0;
-    for(int i=0;i<=strlen(input);i++)
+}
+void re_reverse(char str[] , int start , int end)
+{
+    while(start <= end)
     {
-        if(input[i] == ' ' || input[i] == '\0')
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
+}
+void reverseStringWordWise(char input[]) {
+    reverse_word(input);
+    int start = 0;
+   for(int i=0;i<=strlen(input);i++)
+    {
+        if(input[i] == ' '|| input[i] == '\0')
         {
-            end = i-1;
-            while(start<=end)
-            {
-                char temp;
-                temp = input[start];
-                input[start] = input[end];
-                input[end] = temp;
-                start++;
-                end--;
-            }
+            int end = i-1;
+            re_reverse(input,start,end);
             start = i+1;
         }
 
     }
 
+}
+
+
+int main() {
+    char input[1000];
+    cin.getline(input, 1000);
+    reverseStringWordWise(input);
+    cout<<input;
 }
