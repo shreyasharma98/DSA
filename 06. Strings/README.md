@@ -9,27 +9,25 @@ Palindrome strings are those, where string s and its reverse is exactly same.
 ```
 abcdcba
 ```
-
-
 ### Sample Output :<br>
 ``` 
 true 
 ```
 
-# 2.Selection Sort
-The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+# 2Replace Character
+
+Given an input string S and two characters c1 and c2, you need to replace every occurrence of character c1 with character c2 in the given string.
 
  ### Sample Input :<br>
 
 ```
-5
-9 3 6 2 0
+abacd
+a x
 ```
-
 
 ### Sample Output :<br>
 ``` 
-0 2 3 6 9
+xbxcd
 ```
 
 # 3. Insertion Sort
