@@ -16,20 +16,20 @@ Given a 2D integer array of size M*N, find and print the sum of ith column eleme
 16 20 
 ```
 
-# 2Replace Character
+# 2. Largest Row or Column
 
-Given an input string S and two characters c1 and c2, you need to replace every occurrence of character c1 with character c2 in the given string.
+Given an NxM 2D array, you need to find out which row or column has largest sum (sum of its elements) overall amongst all rows and columns.
 
- ### Sample Input :<br>
+### Sample Input :<br>
 
 ```
-abacd
-a x
+3 3
+3 6 9 1 4 7 2 8 9
 ```
 
 ### Sample Output :<br>
 ``` 
-xbxcd
+column 2 25
 ```
 
 # 3. Trim Spaces
