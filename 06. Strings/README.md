@@ -58,10 +58,10 @@ shreya sharma is a good girl
 girl good a is sharma shreya
 ```
 
-# 5. Push Zeros to end
+# 5. Print All Substrings
 
-Given a random integer array, push all the zeros that are present to end of the array. The respective order of other elements should remain same.
-Change in the input array itself. You don't need to return or print elements. Don't use extra array.
+Given a String S of length n, print all its substrings.
+Substring of a String S is a part of S (of any length from 1 to n), which contains all consecutive characters from S.
 ### Sample Input :<br>
 
 ```
@@ -80,14 +80,17 @@ Given a random integer array of size n, write a function that rotates the given 
 ### Sample Input :<br>
 
 ```
-7
-1 2 3 4 5 6 7
-2
+abc
 ```
 
 ### Sample Output :<br>
 ``` 
-3 4 5 6 7 1 2
+a
+ab
+abc
+b
+bc
+c
 ```
 # 7.Second Largest in array
 
