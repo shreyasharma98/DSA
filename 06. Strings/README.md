@@ -72,3 +72,16 @@ o
 ```
 welcme t cding ninjas
 ```
+# 6. Compress the String
+
+Write a program to do basic string compression. For a character which is consecutively repeated more than once, replace consecutive duplicate occurrences with the count of repetitions.
+For e.g. if a String has 'x' repeated 5 times, replace this "xxxxx" with "x5".
+
+ ### Sample Input :<br>
+```
+aaabbcccdsaa
+```
+ ### Sample Output :
+```
+a3b2c3dsa2
+```
