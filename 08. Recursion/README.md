@@ -1,24 +1,17 @@
 ## USER DEFINED FUNCTIONS
 
-# 1.Fahrenheit to Celsius Table
-Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and Step Size (W), you need to convert all Fahrenheit values from Start to End at the gap of W, into their corresponding Celsius values and print the table.
+# 1.oneToN
+Given a number n, print 1 to n. 
 <br>
  ### Sample Input :<br>
 ```
-0 
-100 
-20 
+8 
 ```
 
 
 ### Sample Output :<br>
 ``` 
-0   -17 
-20  -6 
-40  4 
-60  15
-80  26
-100 37
+1 2 3 4 5 6 7 8
 ```
 
 # 2.Fibonacci Number
