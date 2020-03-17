@@ -24,13 +24,13 @@ Given a number n, print n to 1.
 ```
 # 3.Fibonacci Number
 
-Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
- ### Sample Input :<br>
+Given a number N, figure out the member on that location in the fibonacci series.
+### Sample Input :<br>
 
 ```
-5
+6
 ```
 ### Sample Output :<br>
 ``` 
-true
+8
 ```
