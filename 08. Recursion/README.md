@@ -11,7 +11,7 @@ Given a number n, print 1 to n.
 ``` 
 1 2 3 4 5 6 7 8
 ```
-# 2 NToOne
+# 2.NToOne
 Given a number n, print n to 1. 
 <br>
  ### Sample Input :<br>
@@ -34,7 +34,7 @@ Given a number N, figure out the member on that location in the fibonacci series
 ``` 
 5
 ```
-# 3.Fibonacci Series
+# 4.Fibonacci Series
 
 Given a number N, Print fibonacci series consisting n numbers.
 ### Sample Input :<br>
