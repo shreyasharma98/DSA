@@ -2,19 +2,25 @@
 using namespace std;
 int fibbo(int n)
 {
-if(n == 0){cout<<0<<" ";return 0;}
-else if(n == 1){cout<<1<<" ";return 1;}
-
-else {  int val = (fibbo(n-2)+fibbo(n-1));
-        cout<<val<<" ";
+if(n==1 || n==0)
+{
+    return n;
 }
+else{
+return fibbo(n-1)+fibbo(n-2);
 }
 
+}
 int main()
 {
-    int n;
+    int n,i=0;
     cin>>n;
-    fibbo(n);
+    while(i<n)
+        {
+            cout<<fibbo(i)<<"\n";
+            i++;
+        }
+
     return 0;
 }
 
