@@ -32,5 +32,5 @@ Given a number N, figure out the member on that location in the fibonacci series
 ```
 ### Sample Output :<br>
 ``` 
-8
+5
 ```
