@@ -15,7 +15,7 @@ int main()
 {
     int n,i=0;
     cin>>n;
-    while(i<n)
+    while(i<=n)
         {
             cout<<fibbo(i)<<"\n";
             i++;

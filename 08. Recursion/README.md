@@ -32,7 +32,7 @@ Given a number N, figure out the member on that location in the fibonacci series
 ```
 ### Sample Output :<br>
 ``` 
-5
+8
 ```
 # 4.Fibonacci Series
 
@@ -44,7 +44,7 @@ Given a number N, Print fibonacci series consisting n numbers.
 ```
 ### Sample Output :<br>
 ``` 
-0 1 1 2 3 5
+0 1 1 2 3 5 8
 ```
 # 5.Factorial of a number
 
