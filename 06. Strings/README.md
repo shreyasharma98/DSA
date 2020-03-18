@@ -14,7 +14,7 @@ abcdcba
 true 
 ```
 
-# 2Replace Character
+# 2.Replace Character
 
 Given an input string S and two characters c1 and c2, you need to replace every occurrence of character c1 with character c2 in the given string.
 
@@ -97,4 +97,19 @@ abdefgbabfba
  ### Sample Output :
 ```
 b
+```
+# 8. Amazing strings
+Given 3 Strings, check whether the 3rd string contains all the characters of string 1 and 2 in any order. If all the characters are present, print "YES" otherwise print "NO".
+There should not be any extra character and any missing character.
+The string s contains uppercase Latin letters only..
+
+ ### Sample Input :<br>
+```
+SANTACLAUS
+DEDMOROZ
+SANTAMOROZDEDCLAUS
+```
+ ### Sample Output :
+```
+YES
 ```
