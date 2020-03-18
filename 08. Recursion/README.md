@@ -58,3 +58,16 @@ Given a number N, Print factorial of that numbers.
 ``` 
 120
 ```
+
+# 6.Count Digits
+
+Given a number N, Print the number of digits in that number.
+### Sample Input :<br>
+
+```
+2396
+```
+### Sample Output :<br>
+``` 
+4
+```
