@@ -46,3 +46,15 @@ Given a number N, Print fibonacci series consisting n numbers.
 ``` 
 0 1 1 2 3 5
 ```
+# 5.Factorial of a number
+
+Given a number N, Print factorial of that numbers.
+### Sample Input :<br>
+
+```
+5
+```
+### Sample Output :<br>
+``` 
+120
+```
