@@ -34,3 +34,15 @@ Given a number N, figure out the member on that location in the fibonacci series
 ``` 
 5
 ```
+# 3.Fibonacci Series
+
+Given a number N, Print fibonacci series consisting n numbers.
+### Sample Input :<br>
+
+```
+6
+```
+### Sample Output :<br>
+``` 
+0 1 1 2 3 5
+```
