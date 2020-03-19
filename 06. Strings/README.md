@@ -113,3 +113,15 @@ SANTAMOROZDEDCLAUS
 ```
 YES
 ```
+
+# 9. Minimum length word
+Given a string S (that can contain multiple words), you need to find the word which has minimum length.
+
+ ### Sample Input :<br>
+```
+this is test string
+```
+ ### Sample Output :
+```
+is
+```
