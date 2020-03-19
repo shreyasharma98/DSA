@@ -31,16 +31,26 @@ Given an NxM 2D array, you need to find out which row or column has largest sum 
 ``` 
 column 2 25
 ```
-Input :<br>
+
+
+# 2. Print 2D array
+
+Given a 2D integer array with n rows and m columns. Print the 0th row from input n times, 1st row n-1 times…..(n-1)th row will be printed 1 time.
+### Sample Input :<br>
 
 ```
-3
-6 2 4
-3
-7 5 6
+3 3
+1    2    3
+4    5    6
+7    8    9
 ```
 
 ### Sample Output :<br>
 ``` 
-1 3 8 0
+1    2    3
+1    2    3
+1    2    3
+4    5    6
+4    5    6
+7    8    9
 ```
