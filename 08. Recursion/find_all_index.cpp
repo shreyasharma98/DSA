@@ -1,32 +1,22 @@
 
 #include<iostream>
 using namespace std;
-
-int allIndexes(int input[], int n, int x, int output[]) {
-    if(n == 0)
+void find_indices(int arr[],int cur,int n, int x,int output[],int &k)
+{
+    if(cur == n)
+        return;
+    if(arr[cur] == x)
     {
-        return 0;
+        output[k] = cur;
+        k++;
     }
-    int ans = allIndexes(input+1,n-1,x,output);
-    if(input[0] == x)
-    {
-        for(int i = ans-1;i>=0;i--)
-        {
-            output[i+1] = output[i]+1;
-        }
-        output[0] = 0;
-        ans++;
-    }
-    else
-    {
-        for(int i = ans-1;i>=0;i--)
-        {
-            output[i] = output[i]+1;
-        }
-    }
-    return ans;
+    find_indices(arr,cur+1,n,x,output,k);
 }
-
+int allIndexes(int input[], int size, int x, int output[]) {
+ int k =0;
+find_indices(input,0,size,x,output,k);
+    return k;
+}
 
 int main(){
     int n;
