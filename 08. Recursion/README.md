@@ -71,3 +71,32 @@ Given a number N, Print the number of digits in that number.
 ``` 
 4
 ```
+
+# 7.Sum of Array
+
+Given an array of length N, you need to find and return the sum of all elements of the array.
+Do this recursively.
+### Sample Input :<br>
+
+```
+3
+9 8 9
+```
+### Sample Output :<br>
+``` 
+26
+```
+# 8.Check number 
+Given an array of length N and an integer x, you need to find if x is present in the array or not. Return true or false.
+Do this recursively.
+### Sample Input :<br>
+
+```
+3
+9 8 10
+8
+```
+### Sample Output :<br>
+``` 
+true
+```
