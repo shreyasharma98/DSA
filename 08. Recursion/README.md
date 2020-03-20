@@ -100,3 +100,46 @@ Do this recursively.
 ``` 
 true
 ```
+# 9.Is Soted
+Given an array of length N , you need to find if the array is sorted or not. Return true or false.
+Do this recursively.
+### Sample Input :<br>
+
+```
+6
+2 3 4 5 6 7
+```
+### Sample Output :<br>
+``` 
+true
+```
+# 10.First Index of Number
+
+Given an array of length N and an integer x, you need to find and return the first index of integer x present in the array. Return -1 if it is not present in the array.
+First index means, the index of first occurrence of x in the input array.
+### Sample Input :<br>
+
+```
+4
+9 8 10 8
+8
+```
+### Sample Output :<br>
+``` 
+1
+```
+# 11.Last Index of Number
+
+Given an array of length N and an integer x, you need to find and return the last index of integer x present in the array. Return -1 if it is not present in the array.
+last index means, the index of last occurrence of x in the input array.
+### Sample Input :<br>
+
+```
+4
+9 8 10 8
+8
+```
+### Sample Output :<br>
+``` 
+3
+```
