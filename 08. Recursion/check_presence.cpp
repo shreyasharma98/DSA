@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-bool sorted(int arr[],int n,int x)
+bool check_presence(int arr[],int n,int x)
 {
    if(arr[0] == x)
    {
@@ -11,7 +11,7 @@ bool sorted(int arr[],int n,int x)
    {
        return false;
    }
-   return sorted(arr+1,n-1,x);
+   return check_presence(arr+1,n-1,x);
 }
 int main()
 {
@@ -25,8 +25,8 @@ int main()
     }
     int x;
     cin>>x;
-    int is_Sorted = sorted(p,n,x);
-    if(is_Sorted){cout<<"True \n";}
+    int is_Present = check_presence(p,n,x);
+    if(is_Present){cout<<"True \n";}
     else{cout<<"False \n";}
     delete [] p;
     return 0;
