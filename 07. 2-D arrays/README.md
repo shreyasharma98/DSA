@@ -33,7 +33,7 @@ column 2 25
 ```
 
 
-# 2. Print 2D array
+# 3. Print 2D array
 
 Given a 2D integer array with n rows and m columns. Print the 0th row from input n times, 1st row n-1 times…..(n-1)th row will be printed 1 time.
 ### Sample Input :<br>
