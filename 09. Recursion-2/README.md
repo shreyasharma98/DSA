@@ -117,3 +117,25 @@ Do this recursively.
 ``` 
 1024
 ```
+
+# 10. Key-pad codes
+Given an integer n, using phone keypad find out all the possible strings that can be made using digits of input n.
+Return empty string for numbers 0 and 1.
+Do this recursively.
+### Sample Input :<br>
+
+```
+23
+```
+### Sample Output :<br>
+``` 
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+```
