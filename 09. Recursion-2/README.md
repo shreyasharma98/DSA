@@ -87,7 +87,7 @@ avvxxn
 av*vx*xn
 ```
 # 8.Tower of Hanoi
-Send Feedback
+
 Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move all disks from source rod to destination rod using third rod (say auxiliary). The rules are :
 <br>1) Only one disk can be moved at a time.
 <br>2) A disk can be moved only if it is on the top of a rod.
