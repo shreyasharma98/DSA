@@ -105,3 +105,15 @@ a b
 a c
 b c
 ```
+# 9.String to integer
+Given a string return it as integer.
+Do this recursively.
+### Sample Input :<br>
+
+```
+1024
+```
+### Sample Output :<br>
+``` 
+1024
+```
