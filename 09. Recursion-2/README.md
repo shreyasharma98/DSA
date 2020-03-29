@@ -139,3 +139,15 @@ cd
 ce
 cf
 ```
+# 10. Quick Sort
+
+### Sample Input :<br>
+
+```
+8
+80 30 60 10 40 20 70 50
+```
+### Sample Output :<br>
+``` 
+10 20 30 40 50 60 70 80
+```
