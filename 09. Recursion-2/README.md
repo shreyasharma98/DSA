@@ -151,7 +151,7 @@ cf
 ``` 
 10 20 30 40 50 60 70 80
 ```
-# 10.Merge Sort
+# 11.Merge Sort
 
 ### Sample Input :<br>
 
@@ -162,4 +162,23 @@ cf
 ### Sample Output :<br>
 ``` 
 10 20 30 40 50 60 70 80
+```
+# 12.Subsequences
+Given a string s, print all possible subsequences that can be formed using the characters of the given string.
+Do this recursively.
+### Sample Input :<br>
+
+```
+abc
+```
+### Sample Output :<br>
+``` 
+
+c
+b
+bc
+a
+ac
+ab
+abc
 ```
