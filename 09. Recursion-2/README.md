@@ -151,7 +151,7 @@ cf
 ``` 
 10 20 30 40 50 60 70 80
 ```
-# 11.Merge Sort
+# 11. Merge Sort
 
 ### Sample Input :<br>
 
@@ -163,7 +163,7 @@ cf
 ``` 
 10 20 30 40 50 60 70 80
 ```
-# 12.Subsequences
+# 12. Subsequences
 Given a string s, print all possible subsequences that can be formed using the characters of the given string.
 Do this recursively.
 ### Sample Input :<br>
@@ -182,7 +182,7 @@ ac
 ab
 abc
 ```
-# 13.Staircase 
+# 13. Staircase 
 A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3 steps at a time. Implement a method to count how many possible ways the child can run up to the stairs. You need to return number of possible ways W.
 Do this recursively.
 ### Sample Input :<br>
@@ -193,4 +193,18 @@ Do this recursively.
 ### Sample Output :<br>
 ``` 
 7
+```
+# 14. Check AB
+Suppose you have a string made up of only 'a' and 'b'. Write a recursive function that checks if the string was generated using the following rules:
+<br>a. The string begins with an 'a'
+<br>b. Each 'a' is followed by nothing or an 'a' or "bb"
+<br>c. Each "bb" is followed by nothing or an 'a'
+### Sample Input :<br>
+
+```
+abb
+```
+### Sample Output :<br>
+``` 
+true
 ```
