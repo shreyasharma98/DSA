@@ -12,11 +12,12 @@ void subset_helperss(int input[],int n,int output[],int m)
         cout<<endl;
         return;
     }
-
-    for(int i =0;i<=m;i++)
+    int i =0;
+    for(;i<m;i++)
     {
         newOutput[i]= output[i] ;
     }
+    newOutput[i] = input[0];
     subset_helperss(input+1,n-1,output,m);
     subset_helperss(input+1,n-1,newOutput,m+1);
 }
