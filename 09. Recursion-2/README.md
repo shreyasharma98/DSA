@@ -1,4 +1,4 @@
-## USER DEFINED FUNCTIONS
+## RECURSION
 
 # 1.length of string
 Given a string compute its length recursively.
