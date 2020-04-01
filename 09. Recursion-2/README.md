@@ -252,3 +252,25 @@ Given an integer array (of length n), find and return all the subsets of input a
 15 20 
 15 20 12 
 ```
+# 17.Print Subsets of Array
+
+Given an integer array (of length n), find and print all the subsets of input array.
+Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
+Note : The order of subsets are not important. Just print the subsets in different lines. 
+### Sample Input :<br>
+
+```
+3
+15 20 12
+```
+### Sample Output :<br>
+``` 
+ 
+12 
+20 
+20 12 
+15 
+15 12 
+15 20 
+15 20 12 
+```
