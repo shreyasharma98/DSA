@@ -232,7 +232,7 @@ Line 3 : x (element to be searched)
 3
 ```
 
-#16. Return subset of an array
+# 16. Return subset of an array
 
 Given an integer array (of length n), find and return all the subsets of input array.
 ### Sample Input :<br>
