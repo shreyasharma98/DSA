@@ -304,9 +304,25 @@ Subsets are of length varying from 0 to n, that contain elements of the array. B
 3 3
 5 1
 ```
-# 20.Print all Codes - String
-Send Feedback
-Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. Write a program to print the list of all possible codes that can be generated from the given string.
+# 20.Return all Codes - String
+
+Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. Write a program to Return the list of all possible codes that can be generated from the given string.
+### Sample Input :<br>
+
+```
+1123
+```
+### Sample Output :<br>
+``
+aabc
+kbc
+alc
+aaw
+kw
+```
+# 21.Print all Codes - String
+
+Assume that the value of a = 1, b = 2, c = 3, ... , z = 26. You are given a numeric string S. Write a program to Print the list of all possible codes that can be generated from the given string.
 ### Sample Input :<br>
 
 ```
