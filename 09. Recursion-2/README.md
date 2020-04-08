@@ -274,8 +274,23 @@ Note : The order of subsets are not important. Just print the subsets in differe
 15 20 
 15 20 12 
 ```
-# 18.Return Sum up to k
+# 18.  Return Sum up to k
 Given an array A of size n and an integer K, return all subsets of A which sum to K.
+Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
+### Sample Input :<br>
+
+```
+9 
+5 12 3 17 1 18 15 3 17 
+6
+```
+### Sample Output :<br>
+``
+3 3
+5 1
+```
+# 19.Print Sum up to k
+Given an array A of size n and an integer K, print all subsets of A which sum to K.
 Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
 ### Sample Input :<br>
 
