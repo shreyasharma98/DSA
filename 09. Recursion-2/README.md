@@ -344,9 +344,25 @@ abc
 ```
 ### Sample Output :<br>
 ``
-aabc
-kbc
-alc
-aaw
-kw
+abc
+acb
+bac
+bca
+cab
+cba
+```
+# 23. Return Permutations - String
+
+Given a string, find and return all the possible permutations of the input string.
+```
+abc
+```
+### Sample Output :<br>
+``
+abc
+acb
+bac
+bca
+cab
+cba
 ```
