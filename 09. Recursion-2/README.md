@@ -336,3 +336,17 @@ alc
 aaw
 kw
 ```
+# 22.Print Permutations - String
+
+Given a string, find and print all the possible permutations of the input string.
+```
+abc
+```
+### Sample Output :<br>
+``
+aabc
+kbc
+alc
+aaw
+kw
+```
