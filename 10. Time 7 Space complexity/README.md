@@ -18,7 +18,8 @@ For each element in the array check for its duplicate..if the duplicate found..t
                else->return arr[i];}
  ##### Time Complexity : O(n^2)
 
- ### Better approach : Sort the array first.. Now check the adjacent element if the element is not same..that means the elemnt is unique..(Note: in the loop the the increment/updation statement must be i+=2)<br>Algo : <br> 1. Sort the elements.
+ ### Better approach : 
+Sort the array first.. Now check the adjacent element if the element is not same..that means the elemnt is unique..(Note: in the loop the the increment/updation statement must be i+=2)<br>Algo : <br> 1. Sort the elements.
 2. for(i = 0 to n-1) <br>
 3.if(arr[i]!=arr[i+1]) -> {return arr[i];} else ->i+=2;
 
