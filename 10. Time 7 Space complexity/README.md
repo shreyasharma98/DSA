@@ -11,8 +11,8 @@
 ```
 <br>
 Naive approach : For each element in the array check for its duplicate..if the duplicate found..then break the array else if not found any duplicate then we have the unique element..Just simply return it.
-<br>Algo :1. for (i=0 to n-1)
-2. for(j = 0 to n-1) 
+<br>Algo :1. for (i=0 to n-1)<br>
+2. for(j = 0 to n-1) <br>
 3.if(i!=j) {check if arr[i] == arr[j]
                if true -> break; 
                else->return arr[i];}
