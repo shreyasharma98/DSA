@@ -10,13 +10,13 @@
 1
 ```
 <br>
- ### Naive approach : For each element in the array check for its duplicate..if the duplicate found..then break the array else if not found any duplicate then we have the unique element..Just simply return it.
+ 
+### Naive approach : For each element in the array check for its duplicate..if the duplicate found..then break the array else if not found any duplicate then we have the unique element..Just simply return it.
 <br>Algo : <br> 1. for (i=0 to n-1)<br>
 2. for(j = 0 to n-1) <br>
 3.if(i!=j) {check if arr[i] == arr[j]
                if true -> break; 
-               else->return arr[i];}<br>
- ##### Time Complexity : O(n^2)
+               else->return arr[i];}<br> ##### Time Complexity : O(nlogn+n)
 
 <br>
  ### Better approach : Sort the array first.. Now check the adjacent element if the element is not same..that means the elemnt is unique..(Note: in the loop the the increment/updation statement must be i+=2)<br>Algo : <br> 1. Sort the elements.
