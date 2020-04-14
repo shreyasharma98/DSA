@@ -59,7 +59,7 @@ For each element in the array check for its duplicate..if the duplicate found..t
  ##### Time Complexity : O(n^2)
 
  ### Better approach : 
-Sort the array first.. Now check the adjacent element if the element is  same..then return the element.(Note: in the loop the the increment/updation statement must be i+=2)<br>Algo : <br> 1. Sort the elements.
+Sort the array first.. Now check the adjacent element if the element is  same..then return the element.(Note: in the loop the the increment/updation statement must be i+=2)<br>Algo : <br> 1. Sort the elements.<br>
 2. for(i = 0 to n-1) <br>
 3.if(arr[i]!=arr[i+1]) -> {return arr[i];} else ->i+=2;
 
