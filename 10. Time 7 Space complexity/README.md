@@ -70,9 +70,9 @@ Sort the array first.. Now check the adjacent element if the element is  same..t
 So, As we know sum of n numbers is : (n*(n-1))/2
 ```
 So, In the given question the the elements in the array are in range 0 to n-2...Therefore the sum would be - ((n-1)*(n-2))/2,and subtract it from sum of all elements in that array..The difference remarks the extra elemnt which is the duplicate 1<br>
-Algo : <br> 1.declare a variable ideal = ((n-1)*(n-2))/2, where n is the size of the array and one more variable sum.
+Algo : <br> 1.declare a variable ideal = ((n-1)*(n-2))/2, where n is the size of the array and one more variable sum.<br>
 2. for(i = 0 to n-1) <br>
-3.Sum+= arr[i];
+3.Sum+= arr[i];<br>
 4. Return sum-ideal.
 
  ##### Time Complexity : O(n)
