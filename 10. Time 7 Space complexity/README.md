@@ -33,9 +33,9 @@ Sort the array first.. Now check the adjacent element if the element is not same
 ```
 So, As we see the XOR retuens 0 when the Numbers are same...SO using this approach...apply XOR to each element of the array.. and the duplicates would turned to 0 and return the element which is remaining.
 <br>
-Algo : <br> 1.declare a variable Uninque, it will hold the result of the XOR operartions.
+Algo : <br> 1.declare a variable Uninque, it will hold the result of the XOR operartions.<br>
 2. for(i = 0 to n-1) <br>
-3.Unnique ^= arr[i];
+3.Unnique ^= arr[i];<br>
 4. Return Unique.
 
  ##### Time Complexity : O(n)
