@@ -29,7 +29,7 @@ void merge(int input[],int start,int end,int mid)
         i++;
         k++;
     }
-    while(i <= mid)
+    while(j <= end)
     {
         arr[k] = input[j];
             j++;
