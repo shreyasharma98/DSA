@@ -48,7 +48,6 @@ void pairSum(int input[], int size, int x) {
     }
 
 }
-
 int main() {
 
 	int size;
