@@ -1,5 +1,5 @@
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 using namespace std;
 
 node* merge(node *head1, node *head2) {
