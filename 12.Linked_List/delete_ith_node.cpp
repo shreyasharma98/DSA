@@ -1,13 +1,13 @@
 
 
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 
 using namespace std;
 
-Node* delete_(Node *head , int i)
+node* delete_(node *head , int i)
 {
-    Node *temp = head;
+    node *temp = head;
     int ctr = 0;
     if(i == 0)
     {
@@ -19,28 +19,28 @@ Node* delete_(Node *head , int i)
        temp = temp->next;
    }
    if(temp->next!=NULL){
-   Node *t = temp->next;
+   node *t = temp->next;
    temp->next = t->next;
    delete t;}
     return head;
 }
-Node* takeInput()
+node* takeInput()
 {
     int data;
     cin>>data;
-    Node *head = NULL;
-    Node *tail = NULL;
+    node *head = NULL;
+    node *tail = NULL;
     while(data != -1)
     {
-        Node *newNode = new Node(data);
+        node *newnode = new node(data);
         if(head == NULL)
         {
-            head = newNode;
-            tail = newNode;
+            head = newnode;
+            tail = newnode;
         }
         else
         {
-            tail->next = newNode;
+            tail->next = newnode;
             tail = tail->next;
 
         }
@@ -48,9 +48,9 @@ Node* takeInput()
     }
     return head;
 }
-void print(Node *head)
+void print(node *head)
     {
-        Node *temp = head;
+        node *temp = head;
         while(temp!=NULL)
         {
             cout<<temp->data<<"  ";
@@ -59,7 +59,7 @@ void print(Node *head)
         cout<<endl;
     }
 int main() {
-    Node *head = takeInput();
+    node *head = takeInput();
     int idx;
     cout<<"The Linked list b4 deletion :\n";
     print(head);
