@@ -1,11 +1,11 @@
 
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 using namespace std;
 
 
-void printIthNode(Node *head, int i) {
-    Node *temp = head;
+void printIthnode(node *head, int i) {
+    node *temp = head;
     int x = 0;
     while(temp != NULL)
     {
@@ -22,34 +22,34 @@ void printIthNode(Node *head, int i) {
     }
 }
 
-Node* takeInput()
+node* takeInput()
 {
     int data;
     cin>>data;
-    Node *head = NULL;
+    node *head = NULL;
     while(data != -1)
     {
-        Node *newNode = new Node(data);
+        node *newnode = new node(data);
         if(head == NULL)
         {
-            head = newNode;
+            head = newnode;
         }
         else
         {
-            Node *temp = head;
+            node *temp = head;
             while(temp->next!=NULL)
             {
                 temp = temp->next;
             }
-            temp->next = newNode;
+            temp->next = newnode;
         }
         cin>>data;
     }
     return head;
 }
-void print(Node *head)
+void print(node *head)
     {
-        Node *temp = head;
+        node *temp = head;
         while(temp!=NULL)
         {
             cout<<temp->data<<"  ";
@@ -58,9 +58,9 @@ void print(Node *head)
         cout<<endl;
     }
 int main() {
-    Node *head = takenput();
+    node *head = takenput();
     int pos;
     cin >> pos;
-    printIthNode(head, pos);
+    printIthnode(head, pos);
     return 0;
 }
