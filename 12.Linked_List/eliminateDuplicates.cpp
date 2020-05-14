@@ -1,3 +1,7 @@
+#include<iostream>
+#include "Node.cpp"
+using namespace std;
+
 Node* eliminate_duplicate(Node* head)
 {
    Node *temp1 = head;
