@@ -1,8 +1,8 @@
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 using namespace std;
 
-Node* deleteNodeRec(Node *head, int i) {
+node* deletenodeRec(node *head, int i) {
    if(head == NULL)
     {
         return head;
@@ -11,32 +11,32 @@ Node* deleteNodeRec(Node *head, int i) {
     {
          return head->next;
     }
-    head->next = deleteNodeRec(head->next,i-1);
+    head->next = deletenodeRec(head->next,i-1);
     return head;
-    
+
 }
 
-Node* takeinput() {
+node* takeinput() {
     int data;
     cin >> data;
-    Node* head = NULL, *tail = NULL;
+    node* head = NULL, *tail = NULL;
     while(data != -1){
-        Node *newNode = new Node(data);
+        node *newnode = new node(data);
         if(head == NULL)                  {
-            head = newNode;
-            tail = newNode;
+            head = newnode;
+            tail = newnode;
         }
         else{
-            tail -> next = newNode;
-            tail = newNode;
+            tail -> next = newnode;
+            tail = newnode;
         }
         cin >> data;
     }
     return head;
 }
 
-void print(Node *head) {
-    Node *temp = head;
+void print(node *head) {
+    node *temp = head;
     while(temp != NULL) {
         cout << temp -> data << " ";
         temp = temp -> next;
@@ -45,10 +45,10 @@ void print(Node *head) {
 }
 
 int main() {
-    Node *head = takeinput();
+    node *head = takeinput();
     int pos;
     cin >> pos;
-    head = deleteNodeRec(head, pos);
+    head = deletenodeRec(head, pos);
     print(head);
     return 0;
 }
