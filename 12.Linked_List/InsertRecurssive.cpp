@@ -1,45 +1,45 @@
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 using namespace std;
 
-Node* insertNodeRec(Node *head, int i, int data) {
+node* insertnodeRec(node *head, int i, int data) {
     if(head == NULL)
     {
         return head;
     }
     if(i == 0)
     {
-         Node *n = new Node(data);
+         node *n = new node(data);
          n->next = head;
          head = n;
          return head;
     }
-    head->next = insertNodeRec(head->next,i-1,data);
+    head->next = insertnodeRec(head->next,i-1,data);
     return head;
-    
+
 }
 
-Node* takeinput() {
+node* takeinput() {
     int data;
     cin >> data;
-    Node* head = NULL, *tail = NULL;
+    node* head = NULL, *tail = NULL;
     while(data != -1){
-        Node *newNode = new Node(data);
+        node *newnode = new node(data);
         if(head == NULL)                  {
-            head = newNode;
-            tail = newNode;
+            head = newnode;
+            tail = newnode;
         }
         else{
-            tail -> next = newNode;
-            tail = newNode;
+            tail -> next = newnode;
+            tail = newnode;
         }
         cin >> data;
     }
     return head;
 }
 
-void print(Node *head) {
-    Node *temp = head;
+void print(node *head) {
+    node *temp = head;
     while(temp != NULL) {
         cout << temp -> data << " ";
         temp = temp -> next;
@@ -48,10 +48,10 @@ void print(Node *head) {
 }
 
 int main() {
-    Node *head = takeinput();
+    node *head = takeinput();
     int pos, data;
     cin >> pos >> data;
-    head = insertNodeRec(head, pos, data);
+    head = insertnodeRec(head, pos, data);
     print(head);
     return 0;
 }
