@@ -1,18 +1,18 @@
 
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 
 using namespace std;
 
-Node* insert(Node *head , int i, int ele)
+node* insert(node *head , int i, int ele)
 {
-    Node *newNode = new Node(ele);
-    Node *temp = head;
+    node *newnode = new node(ele);
+    node *temp = head;
     int ctr = 0;
     if(i == 0)
     {
-        newNode->next = head;
-        head = newNode;
+        newnode->next = head;
+        head = newnode;
     }
     while(ctr<i-1 && temp!= NULL)
     {
@@ -20,32 +20,32 @@ Node* insert(Node *head , int i, int ele)
         ctr++;
     }
     if(temp!= NULL){
-    /*Node *t = temp->next;
-    temp ->next = newNode;
-    newNode->next = t;*/
+    /*node *t = temp->next;
+    temp ->next = newnode;
+    newnode->next = t;*/
 
-    newNode->next = temp->next;
-    temp->next = newNode;
+    newnode->next = temp->next;
+    temp->next = newnode;
     }
     return head;
 }
-Node* takeInput()
+node* takeInput()
 {
     int data;
     cin>>data;
-    Node *head = NULL;
-    Node *tail = NULL;
+    node *head = NULL;
+    node *tail = NULL;
     while(data != -1)
     {
-        Node *newNode = new Node(data);
+        node *newnode = new node(data);
         if(head == NULL)
         {
-            head = newNode;
-            tail = newNode;
+            head = newnode;
+            tail = newnode;
         }
         else
         {
-            tail->next = newNode;
+            tail->next = newnode;
             tail = tail->next;
 
         }
@@ -53,9 +53,9 @@ Node* takeInput()
     }
     return head;
 }
-void print(Node *head)
+void print(node *head)
     {
-        Node *temp = head;
+        node *temp = head;
         while(temp!=NULL)
         {
             cout<<temp->data<<"  ";
@@ -64,7 +64,7 @@ void print(Node *head)
         cout<<endl;
     }
 int main() {
-    Node *head = takeInput();
+    node *head = takeInput();
     int idx,element;
     cout<<"The Linked list looks like :\n";
     print(head);
