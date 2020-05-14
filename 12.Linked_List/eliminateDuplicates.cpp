@@ -1,11 +1,11 @@
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 using namespace std;
 
-Node* eliminate_duplicate(Node* head)
+node* eliminate_duplicate(node* head)
 {
-   Node *temp1 = head;
-    Node *temp2 = temp1->next;
+   node *temp1 = head;
+    node *temp2 = temp1->next;
     if(head == NULL || head->next == NULL)
     {
         return head;
@@ -25,12 +25,12 @@ Node* eliminate_duplicate(Node* head)
 
     return head;
 }
-Node* takeinput(){
+node* takeinput(){
     int data;
     cin>>data;
-    Node* head=NULL,*tail=NULL;
+    node* head=NULL,*tail=NULL;
     while(data!=-1){
-        Node *newnode=new node(data);
+        node *newnode=new node(data);
         if(head==NULL)                  {
             head=newnode;
             tail=newnode;
@@ -43,11 +43,11 @@ Node* takeinput(){
     }
     return head;
 }
-void print(Node *head)
+void print(node *head)
 {
-    
-    
-    Node*temp=head;
+
+
+    node*temp=head;
     while(temp!=NULL)
     {
         cout<<temp->data<<" ";
@@ -56,7 +56,7 @@ void print(Node *head)
     cout<<endl;
 }
 int main(){
-    Node* head=takeinput();
+    node* head=takeinput();
     head=eliminate_duplicate(head);
     print(head);
     return 0;
