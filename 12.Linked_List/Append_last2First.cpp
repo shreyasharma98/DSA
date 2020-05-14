@@ -1,13 +1,13 @@
 
 #include<iostream>
-#include "Node.cpp"
+#include "node.cpp"
 
 using namespace std;
-Node* append_LinkedList(Node* head,int n)
+node* append_LinkedList(node* head,int n)
 {
     int i = -n;
-    Node *temp = head;
-    Node *t = head;
+    node *temp = head;
+    node *t = head;
     while(temp->next != NULL)
     {
         if(i>=0)
@@ -20,7 +20,7 @@ Node* append_LinkedList(Node* head,int n)
     temp->next = head;
     head = t->next;
     t->next = NULL;
-    
+
     return head;
 }
 
@@ -28,8 +28,8 @@ Node* append_LinkedList(Node* head,int n)
 
 
 
-/*int length(Node *head) {
-    Node *temp = head;
+/*int length(node *head) {
+    node *temp = head;
     int n =  0;
     while(temp != NULL)
     {
@@ -40,11 +40,11 @@ Node* append_LinkedList(Node* head,int n)
 }
 
 
-Node* append_LinkedList(Node* head,int n)
+node* append_LinkedList(node* head,int n)
 {
   int len = length(head);
-    Node *temp = head;
-    Node *tail = head;
+    node *temp = head;
+    node *tail = head;
     while(tail->next != NULL)
     {
       tail = tail->next;
@@ -60,12 +60,12 @@ Node* append_LinkedList(Node* head,int n)
     temp->next = NULL;
     return head;
 }*/
-Node* takeinput(){
+node* takeinput(){
     int data;
     cin>>data;
-    Node* head=NULL,*tail=NULL;
+    node* head=NULL,*tail=NULL;
     while(data!=-1){
-        Node *newnode=new node(data);
+        node *newnode=new node(data);
         if(head==NULL)                  {
             head=newnode;
             tail=newnode;
@@ -78,9 +78,9 @@ Node* takeinput(){
     }
     return head;
 }
-void print(Node *head)
+void print(node *head)
 {
-    Node*temp=head;
+    node*temp=head;
     while(temp!=NULL)
     {
         cout<<temp->data<<" ";
@@ -90,7 +90,7 @@ void print(Node *head)
 }
 int main()
 {
-    Node* head=takeinput();
+    node* head=takeinput();
     int n;
     cin>>n;
     head=append_LinkedList(head,n);
