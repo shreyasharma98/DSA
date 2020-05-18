@@ -2,9 +2,9 @@
 #include "Node.cpp"
 using namespace std;
 
-node* midpoint_linkedlist(node *head)
+Node* midpoint_linkedlist(Node *head)
 {
-   node *slow = head,*fast = head->next;
+   Node *slow = head,*fast = head->next;
     while(fast->next!=NULL || fast == NULL)
     {
         slow=slow->next;
@@ -13,27 +13,27 @@ node* midpoint_linkedlist(node *head)
 	head = slow;
     return head;
 }
-node* takeinput(){
+Node* takeinput(){
     int data;
     cin>>data;
-    node* head=NULL,*tail=NULL;
+    Node* head=NULL,*tail=NULL;
     while(data!=-1){
-        node *newnode=new node(data);
+        Node *newNode=new Node(data);
         if(head==NULL)                  {
-            head=newnode;
-            tail=newnode;
+            head=newNode;
+            tail=newNode;
         }
         else{
-            tail->next=newnode;
-            tail=newnode;
+            tail->next=newNode;
+            tail=newNode;
         }
         cin>>data;
     }
     return head;
 }
-void print(node *head)
+void print(Node *head)
 {
-    node*temp=head;
+    Node*temp=head;
     while(temp!=NULL)
     {
         cout<<temp->data<<" ";
@@ -42,8 +42,8 @@ void print(node *head)
     cout<<endl;
 }
 int main(){
-    node*head=takeinput();
-    node* mid=midpoint_linkedlist(head);
+    Node*head=takeinput();
+    Node* mid=midpoint_linkedlist(head);
     cout<<mid->data;
     return 0;
 }
