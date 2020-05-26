@@ -2,7 +2,7 @@
 #include "Node.cpp"
 using namespace std;
 
-void print_linkedlist_spl(Node*head)
+void print_Reverselinkedlist(Node*head)
 {
     if(head == NULL)
     {
@@ -47,10 +47,10 @@ void print(Node *head)
         }
         cout<<endl;
     }
-    
+
     int main()
 {
-    Node*head=takeinput();
+    Node*head=takeInput();
     print_linkedlist_spl(head);
     return 0;
 }
