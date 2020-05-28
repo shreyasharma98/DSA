@@ -3,10 +3,10 @@
 class Pair
 {
 public:
-    node *head;
-    node *tail;
+    Node *head;
+    Node *tail;
 };
-Pair reverse(node* head)
+Pair reverse(Node* head)
 {
     if(head == NULL || head->next == NULL)
     {
@@ -24,13 +24,13 @@ Pair reverse(node* head)
     return ans;
 
 }
-node* kReverse(node*head,int n)
+Node* kReverse(Node*head,int n)
 {
     if(head == NULL || head->next == NULL)
     {
         return head;
     }
-    node *h1=head,*t1 = head;
+    Node *h1=head,*t1 = head;
     int i = 1;
     while(i!=n)
     {
@@ -41,19 +41,19 @@ node* kReverse(node*head,int n)
         }
         i++;
     }
-    node *h2 = t1->next;
+    Node *h2 = t1->next;
     t1->next = NULL;
     Pair ans = reverse(h1);
-    node *h3 = kReverse(h2,n);
+    Node *h3 = kReverse(h2,n);
     ans.tail->next = h3;
     return ans.head;
 }
-node* takeinput(){
+Node* takeinput(){
     int data;
     cin>>data;
-    node* head=NULL,*tail=NULL;
+    Node* head=NULL,*tail=NULL;
     while(data!=-1){
-        node *newnode=new node(data);
+        Node *newnode=new Node(data);
         if(head==NULL)                  {
             head=newnode;
             tail=newnode;
@@ -66,9 +66,9 @@ node* takeinput(){
     }
     return head;
 }
-void print(node *head)
+void print(Node *head)
 {
-    node*temp=head;
+    Node*temp=head;
     while(temp!=NULL)
     {
         cout<<temp->data<<" ";
@@ -78,7 +78,7 @@ void print(node *head)
 }
 int main()
 {
-    node* head=takeinput();
+    Node* head=takeinput();
     int n;
     cin>>n;
     head=kReverse(head,n);
