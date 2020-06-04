@@ -35,5 +35,15 @@ int main()
         cout<<"size : "<<v2.size()<<"   capacity : "<<v2.capacity()<<endl;
         v2.push_back(i+2);
     }
+    //pop_back() removes the top_most elemnt of the vector
+    vector<int>  v3;
+    v3.push_back(10);
+    v3.push_back(20);
+    v3.push_back(30);
+    //10 20 30
+    v3.pop_back();//10 20
+    v3.pop_back();//10
+    
+    
     return 0;
 }
