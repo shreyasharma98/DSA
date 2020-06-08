@@ -43,7 +43,23 @@ int main()
     //10 20 30
     v3.pop_back();//10 20
     v3.pop_back();//10
-    
-    
+
+    //Iterators in vectors
+cout<<endl<<"Vector 4 : "<<endl;
+     vector<int>  v4;
+    v4.push_back(10);   //insert in a vector using push_back()
+    v4.push_back(20);
+    v4.push_back(30);
+    v4.push_back(40);   //insert in a vector using push_back()
+    v4.push_back(50);
+    v4.push_back(60);
+      vector<int> ::iterator it = v4.begin();
+      while(it!=v4.end())
+      {
+          cout<<*it<<" ";
+          it++;
+      }
+
+
     return 0;
 }
