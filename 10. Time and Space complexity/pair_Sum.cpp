@@ -1,52 +1,43 @@
-#include<algorithm>
+
 #include <iostream>
 using namespace std;
-int ctr(int arr[],int idx,int n)
-{
-    int c = 0;
-    for(int i = 0;i<n;i++)
-    {
-        if(arr[i] == arr[idx])
-        {
-            c++;
-        }
-    }
-    return c;
-}
+#include<algorithm>
 void pairSum(int input[], int size, int x) {
     sort(input,input+size);
-    int i = 0,j=size-1;
-    while(i<j)
+    int left = 0,right = size -1;
+    while(left<right)
     {
-        if(input[i]+input[j] == x)
-        {
-            if(input[i] == input[j])
-            {
-                for(int k = 0;k<j-i;k++)
-                    cout<<input[i]<<" "<<input[j]<<endl;
-
-                i++;
-            }
-            else{
-            int ctr_i = ctr(input,i,size);
-            int ctr_j = ctr(input,j,size);
-            for(int k = 0;k<ctr_i*ctr_j;k++)
-                    cout<<input[i]<<" "<<input[j]<<endl;
-
-            i+=ctr_i;
-            j-=ctr_j;
-            }
-        }
-        else if(input[i]+input[j] > x)
-        {
-            j--;
-        }
+        if(input[left]+input[right] < x)
+            left++;
+        else if(input[left]+input[right] > x)
+            right--;
         else
         {
-            i++;
+            int tempLeft = input[left];
+            int leftCtr = 0;
+            while(tempLeft == input[left])
+            {
+                leftCtr++;left++;
+            }
+            int tempRight = input[right];
+            int printCtr;
+            if(tempLeft == tempRight)
+            {
+                printCtr = (leftCtr*(leftCtr-1))/2;
+            }
+            else
+            {
+                int rightCtr = 0;
+                while(tempRight == input[right])
+                {
+                    rightCtr++;right--;
+                }
+                printCtr = leftCtr*rightCtr;
+            }
+            for(int i = 0;i<printCtr;i++)
+                cout<<tempLeft<<" "<<tempRight<<endl;
         }
     }
-
 }
 int main() {
 
