@@ -3,41 +3,41 @@
 using namespace std;
 #include<algorithm>
 void pairSum(int input[], int size, int x) {
-    sort(input,input+size);
-    int left = 0,right = size -1;
-    while(left<right)
+sort(input,input+size);
+int left = 0,right = size -1;
+while(left<right)
+{
+    if(input[left]+input[right] < x)
+        left++;
+    else if(input[left]+input[right] > x)
+        right--;
+    else
     {
-        if(input[left]+input[right] < x)
-            left++;
-        else if(input[left]+input[right] > x)
-            right--;
+        int tempLeft = input[left];
+        int leftCtr = 0;
+        while(tempLeft == input[left])
+        {
+            leftCtr++;left++;
+        }
+        int tempRight = input[right];
+        int printCtr;
+        if(tempLeft == tempRight)
+        {
+            printCtr = (leftCtr*(leftCtr-1))/2;
+        }
         else
         {
-            int tempLeft = input[left];
-            int leftCtr = 0;
-            while(tempLeft == input[left])
+            int rightCtr = 0;
+            while(tempRight == input[right])
             {
-                leftCtr++;left++;
+                rightCtr++;right--;
             }
-            int tempRight = input[right];
-            int printCtr;
-            if(tempLeft == tempRight)
-            {
-                printCtr = (leftCtr*(leftCtr-1))/2;
-            }
-            else
-            {
-                int rightCtr = 0;
-                while(tempRight == input[right])
-                {
-                    rightCtr++;right--;
-                }
-                printCtr = leftCtr*rightCtr;
-            }
-            for(int i = 0;i<printCtr;i++)
-                cout<<tempLeft<<" "<<tempRight<<endl;
+            printCtr = leftCtr*rightCtr;
         }
+        for(int i = 0;i<printCtr;i++)
+            cout<<tempLeft<<" "<<tempRight<<endl;
     }
+}
 }
 int main() {
 
