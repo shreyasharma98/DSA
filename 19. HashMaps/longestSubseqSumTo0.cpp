@@ -7,25 +7,28 @@ int lengthOfLongestSubsetWithZeroSum(int* arr, int size){
 
   unordered_map<int,int> map1;
   int maxLen = 0;
-  int sum = 0;
-	for(int i = 0;i<size;i++)
-	{
-	    sum+=arr[i];
-	   if(map1[sum] > 0)
-       {
-           int len = i - map1[sum];
-           if(len > maxLen)
-           {
-               maxLen  = len;
-           }
-       }
-       else
-       {
-           map1[sum] = i;
-       }
-	}
+  for(int i = 1;i<size;i++)
+  {
+      arr[i] += arr[i-1];
+  }
+  int m = 0;
+  for(int i = 0;i<size;i++)
+  {
+      if(arr[i]== 0)
+      {
+          if(m<i+1)
+            m = i+1;
+      }
+      else if(map1.count(arr[i]) > 0)
+      {
+          if(m<i - map1[arr[i]])
+            m = i - map1[arr[i]];
+      }
+      else
+        map1[arr[i]] = i;
+  }
 
-	return maxLen;
+	return m;
 
 }
 
